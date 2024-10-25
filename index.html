@@ -30,6 +30,25 @@
                 <li class="lista-menu__item"> <a href="#" class="lista-menu__link">Desing & UX</a></li>
             </ul>
             <img src="img/Logo.svg" alt="Logo da AluraBooks" class="conteiner__imagem">
+        <h1 class="conteiner__titulo"><b class="conteiner__titulo--negrito">Alura</b>Books</h1>
+
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="conteiner__imagem">
+            <label for="opções-menu" class="opções-rotulo">
+                <li class="opções__item">categorias</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Programação</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Front-end</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Infraestrutura</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Business</a></li>
+                <li class="lista-menu__item"><a href="#" class="lista-menu__link">Desing & UX</a></li>
+            </ul>
+            <li class="opções__item"><a href="#" class="opções__link">Favoritos</li>
+                <li class="opções__item"><a href="#" class="opções__link">Minha estante</li>
+        </ul>
+
         </div>
         <div class="conteiner">
             <a href="#"><img src="img/Favoritos.svg" alt="Meus Favoritos" class="conteiner__imagem"></a>
@@ -37,19 +56,22 @@
             <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="conteiner__imagem"></a>
         </div>
     </header>
+
     <section class="banner">
         <h2 class="banner__titulo">Já sabe por onde começar?</h2>
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
+
     <section class="carrossel">
         <h2 class="carrossel__titulo">Novos lançamentos</h2>
+
+        <div class="carrossel__container"></div>
         <!-- Slider main container -->
         <div class="swiper">
-            <!-- Additional required wrapper -->
-             <!-- If we need pagination -->
-             <div class="swiper-pagination"></div>
 
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
              <div class="swiper-wrapper">
                 <!-- Slides-->
                  <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot da alura books" ></div>
@@ -63,62 +85,71 @@
               <!-- If we need navigation buttons -->
                <div class="swiper-button-prev"></div>
                <div class="swiper-button-next"></div>
+
         </div>
 
 <div class="card">
-    <!-- 1º linha -->
     <div class="card__descrição">
-        <!-- 1º coluna -->
         <div class="descrição">
             <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
             <h2 class="descrição__titulo-livro">Angular 11 e Firebase</h2>
-            <p class="descrição__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+            <p class="descrição__texto">
+                Construindo uma aplicação integrada com a plataforma do Google.
+            </p>
         </div>
-        <!-- 2º coluna -->
         <img src="img/Angular.svg" class="descrição__imagem">
     </div>
-
-    <!-- 2º linha -->
      <div class="card__botões">
-        <!-- 1º coluna -->
         <ul class="botões">
-            <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
-            <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+            <li class="botões__item">
+                <img src="img/Favoritos.svg" alt="Favoritar livro">
+            </li>
+            <li class="botões__item">
+                <img src="img/Compras.svg" alt="Adicionar no carrinho de compras">
+            </li>
         </ul>
-        <!-- 2º coluna -->
          <a href="#" class="botões__ancora">Saiba mais</a>
      </div>
+</div>
 </div>
 
     </section>
 
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais vendidos</h2>
+
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!--Additional requiredwrapper -->
+                <!-- Ifwe need pagination -->
+                <div class="swiper-pagination"></div>
+
+<div class="swiper-wrapper">
+    <!-- Slides -->
+<div class="swiper-slide"><img src="img/ApacheKafka.svg"
+    alt="Livrosobreapache kafka e springboot da alura books"></div>
+    <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre liderança em desing da alura books">
+    </div>
+<div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Javascript assertivo da alurabooks">
+</div>
+<div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro Guia Front-end"></div>
+<div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Poppins"></div>
+<div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobre Acessibilidade">
+</div>
+
+<!-- If we need navigation buttons -->
+
     <section class="tópicos">
         <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
         <ul class="tópicos__lista">
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Android</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Marketing Digital</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Agile</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Startups</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">HTML e CSS</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Python</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">OO</a>
-            </li>
-            <li class="tópicos__item">
-                <a href="#" class="tópicos__link">Java</a>
-            </li>
+            <li class="tópicos__item"><a href="#" class="tópicos__link">Android</a></li>
+            <li class="tópicos__item"><a href="#" class="tópicos__link">Marketing Digital</a></li>
+            <li class="tópicos__item"><a href="#" class="tópicos__link">Agile</a></li>
+            <li class="tópicos__item"><a href="#" class="tópicos__link">Startups</a></li>
+            <li class="tópicos__item"><a href="#" class="tópicos__link">HTML e CSS</a></li>
+            <li class="tópicos__item"><a href="#" class="tópicos__link">Python</a></li>
+            <li class="tópicos__item"><a href="#" class="tópicos__link">OO</a></li>
+            <li class="tópicos__item"><a href="#" class="tópicos__link">Java</a></li>
         </ul>
     </section>
 
