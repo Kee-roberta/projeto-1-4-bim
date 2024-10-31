@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -31,9 +31,10 @@
             </ul>
             <img src="img/Logo.svg" alt="Logo da AluraBooks" class="conteiner__imagem">
         <h1 class="conteiner__titulo"><b class="conteiner__titulo--negrito">Alura</b>Books</h1>
+        </div>
 
         <ul class="opções">
-            <input type="checkbox" id="opções-menu" class="conteiner__imagem">
+            <input type="checkbox" id="opções-menu" class="opções__botão">
             <label for="opções-menu" class="opções-rotulo">
                 <li class="opções__item">categorias</li>
             </label>
@@ -51,7 +52,8 @@
 
         </div>
         <div class="conteiner">
-            <a href="#"><img src="img/Favoritos.svg" alt="Meus Favoritos" class="conteiner__imagem"></a>
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus Favoritos" 
+                class="conteiner__imagem container__imagem-transparente"></a>
             <a href="#"><img src="img/Compras.svg" alt="Carrinhos de Compras" class="conteiner__imagem"></a>
             <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="conteiner__imagem"></a>
         </div>
@@ -241,18 +243,6 @@
                 type: "bullets",
             },
         })
-    </script>
-
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper', {
-    spaceBetween: 10,
-    slidesPerView: 3,
-    pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-    },
-});
     </script>
 </body>
 
